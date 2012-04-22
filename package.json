@@ -1,0 +1,25 @@
+{
+    "name" : "node-derby",
+    "version" : "0.0.1",
+    "description" : "multi-environment configuration manager",
+    "keywords" : ["settings", "environment", "configuration"],
+    "author" : "Ömer ÜCEL <omerucel@gmail.com> (http://oucel.wordpress.com)",
+    "main" : "./lib/derby.js",
+    "repository" : {
+        "type": "git",
+        "url" : "https://github.com/omerucel/node-derby"
+    },
+    "bugs" : {
+        "email" : "omerucel@gmail.com",
+        "url" : "http://github.com/omerucel/node-derby/issues"
+    },
+    "licences" : [
+        {
+            "type" : "MIT",
+            "url" : "http://www.opensource.org/licenses/MIT"
+        }
+    ],
+    "dependencies" : {
+        "jQuery" : "*"
+    }
+}
