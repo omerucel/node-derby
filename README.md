@@ -60,7 +60,7 @@ if (!process.env.NODE_ENV)
     process.exit();
 }
 
-var Derby = require('derby');
+var Derby = require('node-derby');
 Derby.setup(process.env.NODE_ENV, __dirname + '/settings/');
 
 console.log(Derby.data);
