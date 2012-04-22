@@ -15,7 +15,7 @@ Ayrıca genel ayarlar içinde default.js isminde bir dosya oluşturabilirsiniz. 
 ezer.
 
 settings/default.js
-<code>
+``` javascript
 var Settings = {
     db : {
         host : 'localhost',
@@ -24,10 +24,10 @@ var Settings = {
 };
 
 module.exports = Settings;
-</code>
+```
 
 settings/production.js
-<code>
+``` javascript
 var Settings = {
     logfile : '/var/production.log',
     db : {
@@ -37,10 +37,10 @@ var Settings = {
 };
 
 module.exports = Settings;
-</code>
+```
 
 settings/stage.js
-<code>
+``` javascript
 var Settings = {
     logfile : '/var/stage.log',
     db : {
@@ -50,10 +50,10 @@ var Settings = {
 };
 
 module.exports = Settings;
-</code>
+```
 
 app.js
-<code>
+``` javascript
 if (!process.env.NODE_ENV)
 {
     console.log("Please set 'NODE_ENV'.");
@@ -64,4 +64,4 @@ var Derby = require('derby');
 Derby.setup(process.env.NODE_ENV, __dirname + '/settings/');
 
 console.log(Derby.data);
-</code>
+```
