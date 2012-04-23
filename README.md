@@ -65,3 +65,15 @@ Derby.setup(process.env.NODE_ENV, __dirname + '/settings/');
 
 console.log(Derby.data);
 ```
+
+Modül ayar klasörünü istenmesi halinde dinleyebilir ve herhangi bir değişiklikte ayarları güncelleyebilir. Bu işlem için
+setup metoduna üçüncü parametre ile true değeri gönderilmelidir.
+
+``` javascript
+Derby.setup(process.env.NODE_ENV, __dirname + '/settings/', true);
+
+Derby.on('change', function(){
+    console.log('Settings changed');
+    console.log(Derby.data);
+});
+```

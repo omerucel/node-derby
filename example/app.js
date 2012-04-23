@@ -5,9 +5,14 @@ if (!process.env.NODE_ENV)
 }
 
 var Derby = require('../lib/derby');
-Derby.setup(process.env.NODE_ENV, __dirname + '/settings/');
+Derby.setup(process.env.NODE_ENV, __dirname + '/settings/', true);
 
 console.log('on app.js');
 console.log(Derby.data);
+
+Derby.on('change', function(){
+    console.log('Settings changed.');
+    console.log(Derby.data);
+});
 
 var aModule = require('./module.js');
