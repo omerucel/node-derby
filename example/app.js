@@ -16,3 +16,7 @@ Derby.on('change', function(){
 });
 
 var aModule = require('./module.js');
+
+Derby.extend({
+    host : 'example.com'
+}, true);

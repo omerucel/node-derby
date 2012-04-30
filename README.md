@@ -76,4 +76,8 @@ Derby.on('change', function(){
     console.log('Settings changed');
     console.log(Derby.data);
 });
+
+Derby.extend({
+    host : 'example.com'
+});
 ```

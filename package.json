@@ -1,6 +1,6 @@
 {
     "name" : "node-derby",
-    "version" : "0.0.5",
+    "version" : "0.0.6",
     "description" : "multi-environment configuration manager",
     "keywords" : ["settings", "environment", "configuration"],
     "author" : "Ömer ÜCEL <omerucel@gmail.com> (http://oucel.wordpress.com)",
